@@ -33,7 +33,7 @@ El frontend es la interfaz visual donde el usuario interactúa con el sistema.
 #### **🛠️ Buenas prácticas**
 - Uso de **React Query** para manejo eficiente de datos.
 - Diseño modular con **Styled Components** o **Tailwind CSS**.
-- Validaciones con **Yup** para formularios.
+
 
 ## 🗄️ Base de datos (Microsoft SQL Server)
 
@@ -88,5 +88,3 @@ El frontend es la interfaz visual donde el usuario interactúa con el sistema.
 Proyecto desarrollado por **Kevin Rojas** 👨‍💻.
 
 ---
-
-Con esta versión, tu README será más atractivo y fácil de entender para quienes visiten tu repositorio en GitHub. Si quieres agregar más detalles, dime qué te gustaría mejorar. 🚀
