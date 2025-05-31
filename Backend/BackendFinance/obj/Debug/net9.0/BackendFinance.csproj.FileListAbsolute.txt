@@ -1,0 +1,8 @@
+D:\Finances\backend\BackendFinance\obj\Debug\net9.0\BackendFinance.csproj.AssemblyReference.cache
+D:\Finances\backend\BackendFinance\obj\Debug\net9.0\BackendFinance.GeneratedMSBuildEditorConfig.editorconfig
+D:\Finances\backend\BackendFinance\obj\Debug\net9.0\BackendFinance.AssemblyInfoInputs.cache
+D:\Finances\backend\BackendFinance\obj\Debug\net9.0\BackendFinance.AssemblyInfo.cs
+D:\Finances\backend\BackendFinance\obj\Debug\net9.0\BackendFinance.csproj.CoreCompileInputs.cache
+D:\Finances\backend\BackendFinance\obj\Debug\net9.0\BackendFinance.MvcApplicationPartsAssemblyInfo.cs
+D:\Finances\backend\BackendFinance\obj\Debug\net9.0\BackendFinance.MvcApplicationPartsAssemblyInfo.cache
+D:\Finances\backend\BackendFinance\obj\Debug\net9.0\BackendFinance.sourcelink.json
