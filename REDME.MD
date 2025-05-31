@@ -1,7 +1,7 @@
 # Finanzas
 
 Funcionalidades por Módulo
-🔹 Backend (Node.js + Express + SQL)
+🔹 Backend (c# + sql server)
 El backend se encargará de procesar las solicitudes del usuario y gestionar la base de datos.
 Endpoints principales
 - Autenticación (/api/auth) → Registro, login y gestión de usuarios.
