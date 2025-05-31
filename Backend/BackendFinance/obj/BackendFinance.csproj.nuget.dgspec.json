@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kevin\\OneDrive\\Desktop\\Finances\\backend\\BackendFinance\\BackendFinance.csproj": {}
+    "D:\\Finances\\backend\\BackendFinance\\BackendFinance.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kevin\\OneDrive\\Desktop\\Finances\\backend\\BackendFinance\\BackendFinance.csproj": {
+    "D:\\Finances\\backend\\BackendFinance\\BackendFinance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kevin\\OneDrive\\Desktop\\Finances\\backend\\BackendFinance\\BackendFinance.csproj",
+        "projectUniqueName": "D:\\Finances\\backend\\BackendFinance\\BackendFinance.csproj",
         "projectName": "BackendFinance",
-        "projectPath": "C:\\Users\\kevin\\OneDrive\\Desktop\\Finances\\backend\\BackendFinance\\BackendFinance.csproj",
+        "projectPath": "D:\\Finances\\backend\\BackendFinance\\BackendFinance.csproj",
         "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kevin\\OneDrive\\Desktop\\Finances\\backend\\BackendFinance\\obj\\",
+        "outputPath": "D:\\Finances\\backend\\BackendFinance\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
