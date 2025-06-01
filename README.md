@@ -13,7 +13,7 @@ El backend se encargará de procesar las solicitudes del usuario y gestionar la 
 - **Gastos (`/api/expenses`)** → CRUD de gastos con categorías y métodos de pago.
 - **Préstamos (`/api/loans`)** → Registro y seguimiento de préstamos.
 - **Pagos recurrentes (`/api/payments`)** → Gestión de pagos periódicos y alertas.
-- **Reportes (`/api/reports`)** → Generación de gráficos financieros.
+
 
 #### **🛡️ Seguridad**
 - Encriptación de datos sensibles.
@@ -26,7 +26,6 @@ El frontend es la interfaz visual donde el usuario interactúa con el sistema.
 #### **Componentes principales**
 - **Dashboard** → Vista general del estado financiero.
 - **Formulario de ingresos/gastos** → Captura de datos con validaciones.
-- **Gráficos y reportes** → Visualización de tendencias financieras.
 - **Gestión de préstamos y pagos** → Registro y seguimiento de deudas.
 - **Autenticación** → Pantallas de login y registro.
 
