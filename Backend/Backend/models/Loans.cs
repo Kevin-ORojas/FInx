@@ -10,6 +10,6 @@ public class Loans
     public DateTime DueDate { get; set; } = DateTime.UtcNow.AddDays(30);
     public bool isPaid { get; set; } = false;
 
-    public User User { get; set; }
+    public required User User { get; set; }
 
 }

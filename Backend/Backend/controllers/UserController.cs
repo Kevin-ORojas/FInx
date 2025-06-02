@@ -40,5 +40,22 @@ namespace Backend.Controllers
             var createdUser = _userService.CreateUser(newUser);
             return CreatedAtAction(nameof(GetUserById), new { id = createdUser.Id }, createdUser);
         }
+
+        [HttpPost("auth/login")]
+        public ActionResult<string> Login([FromBody] LoginRequest request)
+        {
+            var user = _userService.GetUserByEmail(request.Email);
+            if (user == null)
+            {
+                return Unauthorized("Invalid email or password.");
+            }
+
+            bool isPasswordValid = _userService.VerifyPassword(request.Password, user.PasswordHash);
+            if (!isPasswordValid)
+            {
+                return Unauthorized("Invalid email or password.");
+            }
+           return Ok($"Welcome, {user.Name}! Authenticate");
+        }
     }
 }

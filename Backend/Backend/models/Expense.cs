@@ -9,5 +9,5 @@ public class Expense
     public string PaymentMethod { get; set; } = string.Empty;
     public  DateTime Date { get; set; } = DateTime.UtcNow;
 
-    public User user { get; set; }
+    public required User user { get; set; }
 }
