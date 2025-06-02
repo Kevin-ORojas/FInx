@@ -1,5 +1,3 @@
-using System.Security.Cryptography.X509Certificates;
-
 namespace Backend.Models;
 
 public class User
@@ -8,6 +6,6 @@ public class User
     public required string Name { get; set; } = string.Empty;
     public required string Email { get; set; } = string.Empty;
     public required string PasswordHash { get; set; } = string.Empty;
-    public required DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
 }
