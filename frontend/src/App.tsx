@@ -1,10 +1,19 @@
+import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
+import Register from "./components/Register";
+import Home from "./components/Home";
 
 function App() {
   return (
     <>
-      <div>
-        <Sidebar/>
+      <div className="flex">
+        <Sidebar />
+        <div className="ml-64 p-4 w-full">
+          <Routes>
+            <Route path="/register" element={<Register />} />
+            <Route path="/Home" element={<Home />} />
+          </Routes>
+        </div>
       </div>
     </>
   );

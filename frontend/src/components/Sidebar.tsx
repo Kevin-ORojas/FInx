@@ -1,10 +1,19 @@
+import { Link } from "react-router-dom";
+
 export default function Sidebar() {
   return (
-    <div
-      className="w-64 h-full bg-gray-600 p-4
-    text-white min-h-screen rounded-r-4xl"
-    >
-      <div>Sidebar</div>
+    <div className="flex">
+      <div className="fixed left-0 top-0 h-screen w-64 bg-gray-800 text-white shadow-lg">
+        <div className="flex items-center justify-end h-16  px-4">
+          <Link to="./register">
+            <i className="bx bx-user-circle text-4xl"></i>
+          </Link>
+        </div>
+        <hr className="w-full text-white" />
+        <div>
+          <Link to="./Home">Home</Link>
+        </div>
+      </div>
     </div>
   );
 }
