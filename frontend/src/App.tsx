@@ -8,7 +8,7 @@ function App() {
     <>
       <div className="flex">
         <Sidebar />
-        <div className="ml-64 p-4 w-full">
+        <div className="ml-64 w-full">
           <Routes>
             <Route path="/register" element={<Register />} />
             <Route path="/Home" element={<Home />} />
