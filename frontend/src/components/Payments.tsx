@@ -1,6 +1,5 @@
 
-
-export default function Savings() {
+export default function Payments() {
   return (
     <div>
       

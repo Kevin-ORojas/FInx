@@ -1,8 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Sidebar from "./components/Sidebar";
-import Register from "./components/Register";
-import Home from "./components/Home";
-
+import Home from './components'
 function App() {
   return (
     <>
@@ -12,6 +9,9 @@ function App() {
           <Routes>
             <Route path="/register" element={<Register />} />
             <Route path="/Home" element={<Home />} />
+            <Route path="/expenses" element={<Expenses />} />
+            <Route path="/loans" element={<Loans />} />
+            <Route path="/savings" element={<Savings />} />
           </Routes>
         </div>
       </div>

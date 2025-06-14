@@ -10,8 +10,22 @@ export default function Sidebar() {
           </Link>
         </div>
         <hr className="w-full text-white" />
-        <div>
-          <Link to="./Home">Home</Link>
+        <div className="flex flex-col gap-5 px-4 py-4">
+          <Link className="border-2 text-xl" to="./home">
+            Home
+          </Link>
+          <Link className="border-2 text-xl" to="./loans">
+            Loans
+          </Link>
+          <Link className="border-2 text-xl" to="./expenses">
+            Expenses
+          </Link>
+          <Link className="border-2 text-xl" to="./savings">
+            Savings
+          </Link>
+          <Link className="border-2 text-xl" to="./transaction">
+            Transaction
+          </Link>
         </div>
       </div>
     </div>
