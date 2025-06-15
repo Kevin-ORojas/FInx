@@ -1,5 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import Home from './components'
+
+import Sidebar from "./components/Sidebar";
+import Register from "./components/Register";
+import Expenses from './components/Expenses';
+import Loans from "./components/Loans";
+import Savings from "./components/Savings";
+import Home from "./components/Home";
 function App() {
   return (
     <>

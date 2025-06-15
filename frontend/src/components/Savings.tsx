@@ -1,9 +1,3 @@
-
-
 export default function Savings() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <div>Savings</div>;
 }
