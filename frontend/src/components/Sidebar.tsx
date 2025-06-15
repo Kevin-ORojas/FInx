@@ -10,24 +10,41 @@ export default function Sidebar() {
           </Link>
         </div>
         <hr className="w-full text-white " />
-        <div className="flex flex-col gap-5 px-4 py-4">
-          <Link className="text-xl gap-4 flex items-center" to="./home">
+        <div className="flex flex-col gap-5 px-4 py-4 mt-8">
+          <Link
+            className="text-xl gap-4 flex items-center cursor-pointer hover:shadow-blue-500 hover:shadow-2xl py-2 hover:border-b-2 rounded-md"
+            to="./home"
+          >
             <i className="bx bx-home-alt"></i>
             <p>Home</p>
           </Link>
-          <Link className="text-xl flex items-center gap-4" to="./loans">
+          <Link
+            className="text-xl flex items-center gap-4 cursor-pointer hover:shadow-blue-500 hover:shadow-2xl py-2 hover:border-b-2 rounded-md"
+            to="./loans"
+          >
             <i className="bx bx-dollar-circle"></i>
             <i>Loans</i>
           </Link>
-          <Link className=" text-xl flex items-center gap-4" to="./expenses">
-            <i>Expenses</i>
+          <Link
+            className=" text-xl flex items-center gap-4 cursor-pointer hover:shadow-blue-500 hover:shadow-2xl py-2 hover:border-b-2 rounded-md"
+            to="./expenses"
+          >
+            <i className="bx  bx-cart"></i>
+            <i>expenses</i>
           </Link>
-          <Link className=" text-xl flex items-center gap-4" to="./savings">
-            <i className="bx  bx-piggy-bank"></i>
+          <Link
+            className=" text-xl flex items-center gap-4 cursor-pointer hover:shadow-blue-500 hover:shadow-2xl rounded-md py-2 hover:border-b-2 "
+            to="./savings"
+          >
+            <i className="bx bx-piggy-bank"></i>
             <p>Savings</p>
           </Link>
-          <Link className="border-2 text-xl" to="./transaction">
-            Transaction
+          <Link
+            className="text-xl flex items-center gap-4 cursor-pointer hover:shadow-blue-500 rounded-md hover:shadow-2xl py-2 hover:border-b-2"
+            to="./transaction"
+          >
+            <i className="bx bx-credit-card"></i>
+            <p>Transaction</p>
           </Link>
         </div>
       </div>
