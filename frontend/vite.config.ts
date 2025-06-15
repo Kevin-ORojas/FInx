@@ -6,4 +6,6 @@ export default defineConfig({
     host: true,
     port: 5173, // Puedes cambiar el puerto si lo necesitas
   },
+
+  
 });

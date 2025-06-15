@@ -1,9 +1,3 @@
-
-
 export default function expenses() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <div>expenses</div>;
 }
