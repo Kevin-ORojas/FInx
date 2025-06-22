@@ -35,7 +35,7 @@ export default function Register() {
     setIsSubmitted(false);
   };
   return (
-    <div className="flex justify-center items-center h-screen bg-[#363636]">
+    <div className="flex justify-center items-center h-screen bg-[#363636] font-[lato]">
       <form
         className="min-w-1/2 ml-15 w-[350px] sm:min-w-1/2 md:min-w-1/3 rounded-2xl shadow-2xl  bg-[#ECECEC]"
         onSubmit={onSubmit}
