@@ -11,9 +11,9 @@ function App() {
     <>
       <div className="">
         <Sidebar />
-        <div className=" ">
+        <div className="transition-all duration-300 ml-16 sm:ml-64">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/register" element={<Register />} />
             <Route path="/expenses" element={<Expenses />} />
             <Route path="/loans" element={<Loans />} />

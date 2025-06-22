@@ -25,7 +25,7 @@ export default function Register() {
 
     try {
       const res = await crearUsuario(formDate);
-      setMensaje(`Usuario creado: ${res.nombre}`);
+      setMensaje(`Usuario creado: ${res}`);
       setFormDate({ nombre: "", email: "", passwordHash: "" });
       console.log(mensaje);
     } catch (error) {
@@ -37,7 +37,7 @@ export default function Register() {
   return (
     <div className="flex justify-center items-center h-screen bg-[#363636] font-[lato] text-base font-bold">
       <form
-        className="min-w-1/2 ml-15 w-[350px] sm:min-w-1/2 md:min-w-1/3 rounded-2xl shadow-2xl  bg-[#ECECEC]"
+        className="min-w-1/2 w-[350px] sm:min-w-1/2 md:min-w-1/3 rounded-2xl shadow-2xl  bg-[#ECECEC]"
         onSubmit={onSubmit}
       >
         <p className="text-center mt-4">Register</p>
