@@ -44,7 +44,7 @@ export default function Register() {
         <div className="flex flex-col justify-center items-center mt-10 px-4 py-8  ">
           <div className="mb-4 flex flex-col text-center mt-4 w-full ">
             <input
-              className="rounded-md border-none py-3 border-amber-700 "
+              className="rounded-md border-none py-3 border-amber-700 p-3 "
               placeholder="Name.."
               type="text"
               name="name"
@@ -54,7 +54,7 @@ export default function Register() {
           </div>
           <div className="mb-4 flex flex-col text-center mt-4 w-full ">
             <input
-              className="rounded-md border-none py-3 border-amber-700"
+              className="rounded-md border-none py-3 border-amber-700 p-3"
               placeholder="Email..."
               type="email"
               name="email"
@@ -64,7 +64,7 @@ export default function Register() {
           </div>
           <div className="mb-4 flex flex-col text-center mt-4 w-full ">
             <input
-              className="rounded-md border-none py-3 border-amber-700"
+              className="rounded-md border-none py-3 border-amber-700 p-3"
               placeholder="Password..."
               type="password"
               name="password"
