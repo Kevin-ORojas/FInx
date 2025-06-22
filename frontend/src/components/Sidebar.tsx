@@ -9,7 +9,7 @@ export default function Sidebar() {
   };
 
   return (
-    <div className="flex ">
+    <div className="flex font-[lato] font-bold">
       <div
         className={`fixed left-0 top-0 h-screen bg-gray-800 text-white shadow-lg transition-all duration-300 ${
           isShow ? "w-64" : "w-16"
