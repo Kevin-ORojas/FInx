@@ -1,15 +1,16 @@
 import { useState } from "react";
 import type { Usuario } from "../interfaces/usuario";
+import { crearUsuario } from "../api/UsersApi";
 
 export default function Register() {
   const [formDate, setFormDate] = useState<Usuario>({
     nombre: "",
     email: "",
-    password: "",
+    passwordHash: "",
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
-
+  const [mensaje, setMensaje] = useState("");
   // const { nombre, email, password } = formDate;
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -18,14 +19,20 @@ export default function Register() {
       [e.target.name]: e.target.value,
     });
   };
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitted(true);
 
-    setTimeout(() => {
-      console.log("Formulario enviado", formDate);
-      setIsSubmitted(false);
-    }, 2000);
+    try {
+      const res = await crearUsuario(formDate);
+      setMensaje(`Usuario creado: ${res.nombre}`);
+      setFormDate({ nombre: "", email: "", passwordHash: "" });
+      console.log(mensaje);
+    } catch (error) {
+      console.error("Error al registrar usuario", error);
+      setMensaje("❌ No se pudo crear el usuario.");
+    }
+    setIsSubmitted(false);
   };
   return (
     <div className="flex justify-center items-center h-screen bg-[#363636]">

@@ -15,7 +15,10 @@ export default function Sidebar() {
           isShow ? "w-64" : "w-16"
         }`}
       >
-        <button className="p-3 text-white" onClick={handleShow}>
+        <button
+          className="p-3 text-center w-full cursor-pointer text-white"
+          onClick={handleShow}
+        >
           ✖
         </button>
 
