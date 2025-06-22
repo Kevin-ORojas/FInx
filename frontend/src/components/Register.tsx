@@ -37,7 +37,7 @@ export default function Register() {
   return (
     <div className="flex justify-center items-center h-screen bg-[#363636]">
       <form
-        className="sm:min-w-1/2 md:min-w-1/3 rounded-2xl shadow-2xl  bg-[#ECECEC]"
+        className="min-w-1/2 ml-15 w-[350px] sm:min-w-1/2 md:min-w-1/3 rounded-2xl shadow-2xl  bg-[#ECECEC]"
         onSubmit={onSubmit}
       >
         <p className="text-center mt-4">Register</p>
@@ -73,7 +73,7 @@ export default function Register() {
             />
           </div>
           <button
-            className="bg-blue-400 sm:px-6 sm:py-4 md:px-16 rounded-md hover:cursor-pointer hover:bg-blue-500"
+            className="bg-blue-400 px-10 py-4 md:px-16 rounded-md hover:cursor-pointer hover:bg-blue-500"
             type="submit"
             disabled={isSubmitted}
           >
