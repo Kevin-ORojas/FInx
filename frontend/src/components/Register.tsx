@@ -37,12 +37,14 @@ export default function Register() {
   return (
     <div className="flex justify-center items-center h-screen bg-[#363636]">
       <form
-        className="w-full h-auto sm:w-90 sm:h-1/2 md:w-1/2 lg:w-1/3 rounded-2xl shadow-2xl shadow- bg-[#ECECEC]"
+        className="sm:min-w-1/2 md:min-w-1/3 rounded-2xl shadow-2xl  bg-[#ECECEC]"
         onSubmit={onSubmit}
       >
-        <div className="flex flex-col justify-center items-center mt-10 px-4 py-8 ">
-          <div className="mb-4 border-1 flex flex-col text-center mt-4  ">
+        <p className="text-center mt-4">Register</p>
+        <div className="flex flex-col justify-center items-center mt-10 px-4 py-8  ">
+          <div className="mb-4 flex flex-col text-center mt-4 w-full ">
             <input
+              className="rounded-md border-none py-3 border-amber-700 "
               placeholder="Name.."
               type="text"
               name="name"
@@ -50,8 +52,9 @@ export default function Register() {
               onChange={onChange}
             />
           </div>
-          <div className="mb-4 border-1 flex flex-col text-center mt-4 ">
+          <div className="mb-4 flex flex-col text-center mt-4 w-full ">
             <input
+              className="rounded-md border-none py-3 border-amber-700"
               placeholder="Email..."
               type="email"
               name="email"
@@ -59,8 +62,9 @@ export default function Register() {
               onChange={onChange}
             />
           </div>
-          <div className="mb-4 border-1 flex flex-col text-center mt-4  ">
+          <div className="mb-4 flex flex-col text-center mt-4 w-full ">
             <input
+              className="rounded-md border-none py-3 border-amber-700"
               placeholder="Password..."
               type="password"
               name="password"
@@ -68,9 +72,14 @@ export default function Register() {
               onSubmit={onChange}
             />
           </div>
-          <button type="submit" disabled={isSubmitted}>
+          <button
+            className="bg-blue-400 sm:px-6 sm:py-4 md:px-16 rounded-md hover:cursor-pointer hover:bg-blue-500"
+            type="submit"
+            disabled={isSubmitted}
+          >
             {isSubmitted ? "Register" : "Login"}{" "}
           </button>
+          <p className="mt-4">{"Haz olvidado tu contraseña"}</p>
         </div>
       </form>
     </div>
