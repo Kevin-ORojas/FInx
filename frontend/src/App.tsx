@@ -6,6 +6,7 @@ import Expenses from "./components/Expenses";
 import Loans from "./components/Loans";
 import Savings from "./components/Savings";
 import Home from "./components/Home";
+import Transactions from "./components/Transactions";
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
             <Route path="/expenses" element={<Expenses />} />
             <Route path="/loans" element={<Loans />} />
             <Route path="/savings" element={<Savings />} />
+            <Route path="/transactions" element={<Transactions />} />
           </Routes>
         </div>
       </div>

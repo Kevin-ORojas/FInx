@@ -7,9 +7,12 @@ export default function Sidebar() {
         className={`fixed left-0 top-0 h-screen bg-gray-800 text-white shadow-lg transition-all duration-300 w-16 sm:w-64  
          }`}
       >
-        <div className="flex flex-col sm:gap-5 sm:px-4 sm:py-4 sm:mt-8">
+        <div className="flex flex-col items-center md:mt-8 mt-4">
           <Link to="./register">
-            <i className="bx bx-user-circle text-4xl"></i>
+            <i
+              className="bx bx-user-circle text-4xl hover:shadow-blue-500 hover:shadow-2xl transition-shadow duration-500 rounded-full
+            "
+            ></i>
           </Link>
         </div>
         <hr className="w-full text-white " />
@@ -49,7 +52,7 @@ export default function Sidebar() {
           </Link>
           <Link
             className="text-xl flex items-center gap-4 cursor-pointer hover:shadow-blue-500 rounded-md hover:shadow-2xl transition-shadow duration-500 min-h-10 "
-            to="./transaction"
+            to="./transactions"
           >
             <i className="bx bx-credit-card text-3xl"></i>
             <p className="transition-all duration-500 sm:block hidden">
