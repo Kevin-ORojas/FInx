@@ -11,7 +11,7 @@ export default function Transactions() {
     },
   ];
   return (
-    <div className="p-4">
+    <div className="p-4  min-h-screen">
       <div className="bg-white shadow-md p-6 rounded-lg hover:scale-90 transition-transform cursor-pointer">
         <div className="mt-8">
           <input
@@ -40,9 +40,16 @@ export default function Transactions() {
         </div>
       </div>
 
-      <div className="border h-auto p-4">
-        {data.map((datos) => (
-          <li>{datos.arroz}</li>
+      <div className="h-auto p-4 mt-8 bg-white transition-transform shadow-md rounded-md">
+        <div className="grid grid-cols-2 justify-items-center">
+          <p>Producto</p>
+          <p>Precio</p>
+        </div>
+        {data.map(({ precio, arroz }) => (
+          <div className="grid grid-cols-2 justify-items-center mt-6">
+            <li>{arroz}</li>
+            <li>{precio}</li>
+          </div>
         ))}
       </div>
     </div>
