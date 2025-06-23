@@ -26,6 +26,15 @@ export default function Sidebar() {
             <p className="transition-all duration-500 sm:block hidden">Home</p>
           </Link>
           <Link
+            className="text-xl flex items-center gap-4 cursor-pointer hover:shadow-blue-500 rounded-md hover:shadow-2xl transition-shadow duration-500 min-h-10 "
+            to="./transactions"
+          >
+            <i className="bx bx-credit-card text-3xl"></i>
+            <p className="transition-all duration-500 sm:block hidden">
+              Transaction
+            </p>
+          </Link>
+          <Link
             className="text-xl flex items-center gap-4 cursor-pointer hover:shadow-blue-500 hover:shadow-2xl transition-shadow duration-500 min-h-10 rounded-md"
             to="./loans"
           >
@@ -48,15 +57,6 @@ export default function Sidebar() {
             <i className="bx bx-piggy-bank text-3xl"></i>
             <p className="transition-all duration-500 sm:block hidden ">
               Savings
-            </p>
-          </Link>
-          <Link
-            className="text-xl flex items-center gap-4 cursor-pointer hover:shadow-blue-500 rounded-md hover:shadow-2xl transition-shadow duration-500 min-h-10 "
-            to="./transactions"
-          >
-            <i className="bx bx-credit-card text-3xl"></i>
-            <p className="transition-all duration-500 sm:block hidden">
-              Transaction
             </p>
           </Link>
         </div>
