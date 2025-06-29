@@ -10,10 +10,13 @@ namespace Backend.Controllers
     public class UserController : ControllerBase
     {
         private readonly UserService _userService;
+        private readonly TokenService _tokenService;
 
-        public UserController(UserService userService) // Inyección correcta
+
+        public UserController(UserService userService, TokenService tokenService) // Inyección correcta
         {
             _userService = userService; // Asignación correcta
+            _tokenService = tokenService;
         }
 
         [HttpGet]
@@ -33,29 +36,42 @@ namespace Backend.Controllers
         [HttpPost]
         public ActionResult<User> CreateUser([FromBody] User newUser)
         {
-            if(newUser == null)
-            {
-                return BadRequest("User data is required.");
-            }
+            if (newUser == null) return BadRequest("User data is required.");
+
             var createdUser = _userService.CreateUser(newUser);
-            return CreatedAtAction(nameof(GetUserById), new { id = createdUser.Id }, createdUser);
+            var token = _tokenService.GenerateToken(createdUser);
+
+            return Ok(new
+            {
+                token,
+                user = new
+                {
+                    id = createdUser.Id,
+                    name = createdUser.Name,
+                    email = createdUser.Email
+                }
+            });
+
+            // return CreatedAtAction(nameof(GetUserById), new { id = createdUser.Id }, createdUser);
         }
 
         [HttpPost("auth/login")]
-        public ActionResult<string> Login([FromBody] LoginRequest request)
+        public ActionResult<object> Login([FromBody] LoginRequest request)
         {
             var user = _userService.GetUserByEmail(request.Email);
-            if (user == null)
-            {
-                return Unauthorized("Invalid email or password.");
-            }
+            if (user == null) return Unauthorized("Invalid email or password.");
+
 
             bool isPasswordValid = _userService.VerifyPassword(request.Password, user.PasswordHash);
-            if (!isPasswordValid)
+            if (!isPasswordValid) return Unauthorized("Invalid email or password.");
+
+            var token = _tokenService.GenerateToken(user);
+
+            return Ok(new
             {
-                return Unauthorized("Invalid email or password.");
-            }
-           return Ok($"Welcome, {user.Name}! Authenticate");
+                token,
+                user = new { user.Id, user.Name, user.Email }
+            });
         }
     }
 }
